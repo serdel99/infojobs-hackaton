@@ -1,0 +1,26 @@
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+
+  .navbar-content {
+    display: flex;
+    padding: 20px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .navbar-items {
+    display: flex;
+    margin-left: 32px;
+    flex-grow: 0;
+    align-items: center;
+
+    &__link {
+      color: #89898a;
+      font-size: 16px;
+    }
+    &__link:not(:first-child) {
+      margin-left: 32px;
+    }
+  }
+}
