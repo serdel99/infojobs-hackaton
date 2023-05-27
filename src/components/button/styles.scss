@@ -1,0 +1,13 @@
+.button {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 14.5px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #167db7;
+  color: #ffffff;
+
+  &--full-width {
+    width: 100%;
+  }
+}
