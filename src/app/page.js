@@ -1,14 +1,14 @@
 import { Navbar, Modal, Input } from "../components"
 
 import { LinkedinPage } from "../views/linkedin-page"
-import { ExperienceList } from "@/views/experience-list"
+import { InfojobsLogin } from "@/views/infojobs-login"
 export default function Home() {
 
   return (
     <main >
       <Navbar />
       <section className="container">
-        <ExperienceList />
+        <InfojobsLogin />
       </section>
     </main>
   )

@@ -13,12 +13,11 @@ export const Button = ({ children, fullWidth, outline, success, size, iconLeft, 
             })}
             {...restButton}
         >
-            <span className='button-left-icon'>
+            {iconLeft && <span className='button-left-icon'>
                 {
                     iconLeft
                 }
-            </span>
-
+            </span>}
             {children}
         </button>
     )

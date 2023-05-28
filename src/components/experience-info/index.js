@@ -35,6 +35,7 @@ export const ExperienceInfo = ({
             }
             <div className='experience-actions'>
                 <Button
+                    disabled={success}
                     iconLeft={success && (
                         <Image
                             src="/circle-check.svg"
