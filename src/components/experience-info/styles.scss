@@ -1,0 +1,60 @@
+.experience {
+  .experience-header {
+    display: flex;
+    .experience-info {
+      margin-left: 16px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    color: #2d3133;
+    margin-bottom: 4px;
+  }
+  &__company {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #797a7a;
+    margin-bottom: 4px;
+  }
+
+  &__company {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: #797a7a;
+    margin-bottom: 4px;
+  }
+  &__date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #797a7a;
+  }
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #2d3133;
+    margin-top: 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    padding: 16px;
+  }
+  .experience-actions {
+    margin: 16px 0;
+    display: flex;
+    justify-content: end;
+  }
+}

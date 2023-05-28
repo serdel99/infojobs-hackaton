@@ -1,11 +1,12 @@
 import classNames from 'classnames';
 import "./styles.scss"
 
-export const Button = ({ children, fullWidth, ...restButton }) => {
+export const Button = ({ children, fullWidth, outline, ...restButton }) => {
     return (
         <button
             className={classNames("button", {
-                [`button--full-width`]: fullWidth
+                [`button--full-width`]: fullWidth,
+                [`button--outline`]: outline
             })}
             {...restButton}
         >
