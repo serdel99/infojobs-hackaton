@@ -6,13 +6,9 @@ import { Button } from "@/components/button"
 import "./styles.scss"
 
 
-export const ExperienceInfo = ({ title, company, time, description }) => {
-
-    const [success, setSuccess] = useState();
-    const [loading, setLoading] = useState();
-
-
-    const handleAddClick = () => { }
+export const ExperienceInfo = ({
+    index, title, company, time, description, success, handleAction
+}) => {
 
     return (
         <article className={classNames("experience", {
@@ -39,12 +35,22 @@ export const ExperienceInfo = ({ title, company, time, description }) => {
             }
             <div className='experience-actions'>
                 <Button
-                    outline
-                    onClick={handleAddClick}
+                    iconLeft={success && (
+                        <Image
+                            src="/circle-check.svg"
+                            width={16}
+                            height={16}
+                            className="experice-check"
+                            alt='Agregregado al cv' />
+                    )}
+                    outline={!success}
+                    success
+                    onClick={() => { handleAction(index) }}
+                    size="m"
                 >
                     Agregar al CV
                 </Button>
             </div>
-        </article>
+        </article >
     )
 }

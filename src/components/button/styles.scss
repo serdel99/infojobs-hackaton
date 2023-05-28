@@ -7,15 +7,28 @@
   border-radius: 4px;
   background: #167db7;
   color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.5s ease-in;
+}
 
-  &--full-width {
-    width: 100%;
-  }
-  &--outline {
-    background: none;
-    border: 1px solid #167db7;
-    border-radius: 4px;
-    padding: 6px 8px;
-    color: #167db7;
-  }
+.button-left-icon {
+  margin-right: 5px;
+}
+
+.button.button--full-width {
+  width: 100%;
+}
+.button.button--outline {
+  background: none;
+  border: 1px solid #167db7;
+  border-radius: 4px;
+  color: #167db7;
+}
+
+.button.button--size-m {
+  padding: 6px 8px;
+}
+.button--success {
+  background: #00a550;
 }
