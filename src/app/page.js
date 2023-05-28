@@ -1,14 +1,13 @@
-import { Navbar, Modal } from "../components"
+import { Navbar, Modal, Input } from "../components"
+
+import { LinkedinPage } from "../views/linkedin-page"
 
 export default function Home() {
+
   return (
     <main >
       <Navbar />
-      <Modal >
-        <div>
-          Hello world
-        </div>
-      </Modal>
+      <LinkedinPage />
     </main>
   )
 }

@@ -1,13 +1,14 @@
 "use client"
-import { useState } from "react"
 import { Button } from "../button"
 import "./styles.scss"
 
-export const Modal = ({ children }) => {
-    const [open, setOpen] = useState(false)
+export const Modal = ({ children, handleSubmit }) => {
     return (
         <div className="modal">
-            <div className="modal-content">
+            <form
+                className="modal-content"
+                onSubmit={handleSubmit}
+            >
                 <div className="modal__title">
                     My new brand modal
                 </div>
@@ -15,11 +16,11 @@ export const Modal = ({ children }) => {
                     {children}
                 </div>
                 <div className="modal__footer">
-                    <Button fullWidth>
+                    <Button fullWidth type="submit">
                         Aceptar
                     </Button>
                 </div>
-            </div>
+            </form>
         </div>
     )
 }

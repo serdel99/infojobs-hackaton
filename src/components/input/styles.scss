@@ -1,0 +1,21 @@
+.input {
+  &__label {
+    display: block;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2d3133;
+    margin-bottom: 7px;
+  }
+  &__field {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 8px;
+    font-size: 16px;
+    color: #2d3133;
+    border: solid;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+}
