@@ -18,16 +18,6 @@ export const LinkedinPage = () => {
     }
     return (
         <Modal handleSubmit={getLinkedinData}>
-            <Button onClick={() => {
-
-                const urlParam = new URLSearchParams();
-                urlParam.append("scope", "CV")
-                urlParam.append("client_id", "1887d1046298422094317ee972669da6")
-                urlParam.append("redirect_uri", "https://infojobs-linkedin-profile.vercel.app/")
-                urlParam.append("response_type", "code")
-                urlParam.append("state", "")
-                window.location = `https://www.infojobs.net/api/oauth/user-authorize/index.xhtml?${urlParam.toString()}`
-            }} >Login Linkedin</Button>
             {/* <Input label="Linkedin URL" name="page" id="page" /> */}
         </Modal>
     )
